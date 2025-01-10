@@ -2,8 +2,12 @@
 
 show_help () {
     echo "Usage:"
-    echo "  lim10.sh -b=5m -i=eth1"
+    echo "  ./lim10.sh -b=5m -i=eth1"
     echo "  This will limit the BW on eth1 to 5Mbit"
+    echo "  ./lim10.sh -b=512k -i=eth0"
+    echo "  This will limit the BW on eth1 to 512kbit"
+    echo "  ./lim10.sh -d -i=eth0"
+    echo "  This will remove BW limit on eth0"
 }
 
 # Проверка на наличие обязательных параметров
